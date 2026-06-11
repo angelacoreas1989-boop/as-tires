@@ -192,6 +192,9 @@ as-tires/
 │
 └── README.md
 
+---
+
+
 ✦ CONNECT WITH ME ✦
 <p align="center"> <a href="mailto:angelacoreas1989@gmail.com"> <img src="https://img.shields.io/badge/EMAIL-444444?style=for-the-badge&logo=gmail&logoColor=white" /> </a> <a href="https://angelacoreas1989-boop.github.io/tech-portfolio/"> <img src="https://img.shields.io/badge/PORTFOLIO-ff69b4?style=for-the-badge&logo=googlechrome&logoColor=white" /> </a> <a href="https://www.linkedin.com/in/angela-coreas"> <img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /> </a> <a href="https://github.com/angelacoreas1989-boop"> <img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" /> </a> </p>
 ✦ AUTHOR ✦
