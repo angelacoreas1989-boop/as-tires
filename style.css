@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #050505;
+  --dark: #111111;
+  --gray: #1c1c1c;
+  --red: #d90404;
+  --white: #ffffff;
+  --muted: #c7c7c7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--black);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.95);
+  border-bottom: 2px solid var(--red);
+}
+
+.navbar {
+  width: 92%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 14px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo span {
+  font-size: 2.4rem;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.logo small {
+  display: block;
+  color: var(--red);
+  font-weight: 900;
+  letter-spacing: 4px;
+  margin-top: -10px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+  color: var(--red);
+}
+
+.phone-btn {
+  background: var(--red);
+  color: var(--white);
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  color: var(--white);
+  border: none;
+  font-size: 2rem;
+}
+
+.hero {
+  min-height: 88vh;
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.3)),
+    url("assets/as-tires-hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hero-content {
+  width: 92%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  line-height: 0.95;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.hero h1 span {
+  color: var(--red);
+}
+
+.hero p {
+  max-width: 580px;
+  margin: 28px 0;
+  font-size: 1.2rem;
+  color: var(--muted);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 15px 28px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.primary {
+  background: var(--red);
+  color: var(--white);
+}
+
+.secondary {
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.features {
+  width: 92%;
+  max-width: 1300px;
+  margin: -50px auto 0;
+  position: relative;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.feature-card {
+  background: rgba(20, 20, 20, 0.95);
+  padding: 28px;
+  border: 1px solid #333;
+  border-bottom: 4px solid var(--red);
+  border-radius: 10px;
+}
+
+.feature-card h3 {
+  color: var(--red);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.section {
+  width: 92%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.dark-section {
+  background: var(--black);
+}
+
+.section h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--muted);
+  max-width: 750px;
+  margin: 0 auto 40px;
+}
+
+.tire-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.tire-grid span,
+.why-grid div {
+  background: var(--gray);
+  border: 1px solid #333;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  border-radius: 8px;
+}
+
+.tire-grid span::before,
+.why-grid div::before {
+  content: "✓ ";
+  color: var(--red);
+}
+
+.policy-box,
+.delivery-box {
+  background: var(--gray);
+  border: 1px solid #333;
+  border-left: 6px solid var(--red);
+  padding: 35px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.policy-box h3 {
+  color: var(--red);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.policy-box ul,
+.delivery-box ul {
+  margin: 20px 0 0 20px;
+}
+
+.policy-box li,
+.delivery-box li {
+  margin-bottom: 12px;
+}
+
+.important-note {
+  margin-top: 22px;
+  color: var(--red);
+  font-weight: 900;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.contact-section {
+  border-top: 2px solid var(--red);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.contact-grid div {
+  background: var(--gray);
+  border: 1px solid #333;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.contact-grid h3 {
+  color: var(--red);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.contact-grid a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 900;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #000;
+  color: var(--muted);
+  border-top: 1px solid #222;
+}
+
+@media (max-width: 900px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 78px;
+    left: 0;
+    width: 100%;
+    background: #000;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .phone-btn {
+    display: none;
+  }
+
+  .hero {
+    min-height: 80vh;
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.45)),
+      url("assets/as-tires-hero.jpg") center/cover no-repeat;
+  }
+
+  .features,
+  .tire-grid,
+  .why-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features {
+    margin-top: 30px;
+  }
+
+  .section {
+    padding: 55px 0;
+  }
+}
